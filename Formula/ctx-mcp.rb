@@ -2,7 +2,6 @@ class CtxMcp < Formula
   desc "Minimal snapshot-centered context engine (MCP server over stdio)"
   homepage "https://github.com/z23cc/context-engine-rs"
   url "https://github.com/z23cc/context-engine-rs/releases/download/v0.0.4/context-engine-rs-0.0.4.tar.gz"
-  version "0.0.4"
   sha256 "7d5a49bea0f8bf506a067e3e8f8828dfa7d6800add7e2c3d31f7483c04aabee3"
   license any_of: ["MIT", "Apache-2.0"]
 
