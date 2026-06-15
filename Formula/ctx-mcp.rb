@@ -1,14 +1,13 @@
 class CtxMcp < Formula
   desc "Minimal snapshot-centered context engine (MCP server over stdio)"
   homepage "https://github.com/z23cc/context-engine-rs"
-  url "https://github.com/z23cc/context-engine-rs/releases/download/v0.0.5/context-engine-rs-0.0.5.tar.gz"
-  sha256 "c4c364ad486999e95b7a020c13c0468491aae771d28424e687ed9b6ade0d0b96"
+  url "https://github.com/z23cc/context-engine-rs/releases/download/v0.0.6/context-engine-rs-0.0.6.tar.gz"
+  sha256 "3938e7d3a0591aef585df4c7b9593e648f65624af85e37b94859eda500d99fdf"
   license any_of: ["MIT", "Apache-2.0"]
 
   bottle do
-    root_url "https://github.com/z23cc/context-engine-rs/releases/download/v0.0.5"
-    sha256 cellar: :any_skip_relocation, arm64_sequoia:     "13449ca69ad57764e13591c64357f8ead5b0ea4dbbfe01f186469199e5c0c53a"
-    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "af8264eae098b0b802a704790a0388c53822a7210c557dbe3b78492436d0e314"
+    root_url "https://github.com/z23cc/context-engine-rs/releases/download/v0.0.6"
+    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "b8810e0875e0b158bba23042631b5dbe1b6023500dd805b85304eaf5bb9dcf3a"
   end
 
   depends_on "rust" => :build
@@ -18,6 +17,6 @@ class CtxMcp < Formula
   end
 
   test do
-    assert_match "ctx-mcp 0.0.5", shell_output("#{bin}/ctx-mcp --version")
+    assert_match "ctx-mcp 0.0.6", shell_output("#{bin}/ctx-mcp --version")
   end
 end
