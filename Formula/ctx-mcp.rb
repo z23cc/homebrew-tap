@@ -8,6 +8,7 @@ class CtxMcp < Formula
   bottle do
     root_url "https://github.com/z23cc/context-engine-rs/releases/download/v0.0.5"
     sha256 cellar: :any_skip_relocation, arm64_sequoia: "13449ca69ad57764e13591c64357f8ead5b0ea4dbbfe01f186469199e5c0c53a"
+    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "af8264eae098b0b802a704790a0388c53822a7210c557dbe3b78492436d0e314"
   end
 
   depends_on "rust" => :build
