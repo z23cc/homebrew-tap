@@ -1,22 +1,22 @@
 class CtxMcp < Formula
   desc "Minimal snapshot-centered context engine (MCP server over stdio)"
   homepage "https://github.com/z23cc/context-engine-rs"
-  url "https://github.com/z23cc/context-engine-rs/releases/download/v0.0.19/context-engine-rs-0.0.19.tar.gz"
-  sha256 "286a4588b086056727360a09e29161b3b87c99cb1e9e4ef1a6674713c31bff19"
+  url "https://github.com/z23cc/context-engine-rs/releases/download/v0.0.20/context-engine-rs-0.0.20.tar.gz"
+  sha256 "941d19eea6ea288c845bc5ce71796feafe2afa351abf69dd7a1d58ff6f90657f"
   license any_of: ["MIT", "Apache-2.0"]
 
   bottle do
-    root_url "https://github.com/z23cc/context-engine-rs/releases/download/v0.0.19"
-    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "b463ead3d291aef1e25a6ab57993143d2d45a926b5fcae6b1758c6010db6a5e7"
+    root_url "https://github.com/z23cc/context-engine-rs/releases/download/v0.0.20"
+    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "bd73b9d650b519efb4ac7f8bcb674f22a01b9ad979b03a032709debed36da0e2"
   end
 
   depends_on "rust" => :build
 
   def install
-    system "cargo", "install", *std_cargo_args(path: "crates/ctx-mcp")
+    system "cargo", "install", "--features", "semantic", *std_cargo_args(path: "crates/ctx-mcp")
   end
 
   test do
-    assert_match "ctx-mcp 0.0.19", shell_output("#{bin}/ctx-mcp --version")
+    assert_match "ctx-mcp 0.0.20", shell_output("#{bin}/ctx-mcp --version")
   end
 end
