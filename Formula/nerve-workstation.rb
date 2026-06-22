@@ -1,13 +1,13 @@
 class NerveWorkstation < Formula
   desc "Local AI workstation runtime and MCP adapter"
   homepage "https://github.com/z23cc/nerve-workstation"
-  url "https://github.com/z23cc/nerve-workstation/releases/download/v0.0.62/nerve-workstation-0.0.62.tar.gz"
-  sha256 "47822c06f7da22bc185880b5461f4a4c819eed244a41ee7deea4ef94d0dd01e5"
+  url "https://github.com/z23cc/nerve-workstation/releases/download/v0.0.63/nerve-workstation-0.0.63.tar.gz"
+  sha256 "08b9aec6aa19404bbe24adfd3869bfdccd844cc9dc1f540420d321ed2e17c8df"
   license any_of: ["MIT", "Apache-2.0"]
 
   bottle do
-    root_url "https://github.com/z23cc/nerve-workstation/releases/download/v0.0.62"
-    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "b13cfce4299074b50d771b82f5dace9f3631befd28847f0d4dab63bda0e63605"
+    root_url "https://github.com/z23cc/nerve-workstation/releases/download/v0.0.63"
+    sha256 cellar: :any_skip_relocation, arm64_golden_gate: "dac7eee15efb5619ad86ac5c3426b5471f643d580d38b80692e0ddbdc3668654"
   end
 
   depends_on "rust" => :build
@@ -19,6 +19,6 @@ class NerveWorkstation < Formula
   end
 
   test do
-    assert_match "nerve 0.0.62", shell_output("#{bin}/nerve --version")
+    assert_match "nerve 0.0.63", shell_output("#{bin}/nerve --version")
   end
 end
