@@ -19,12 +19,12 @@ cask "repoprompt" do
     Installs as "RepoPrompt.app" (does not touch any official RepoPrompt CE).
 
     PERSONAL, NON-NOTARIZED build signed with an Apple Development certificate.
-    Gatekeeper blocks non-notarized downloads, so install with --no-quarantine:
+    Homebrew quarantines downloads; after install, clear the quarantine so
+    Gatekeeper allows it:
 
-      brew install --cask --no-quarantine z23cc/tap/repoprompt-ce
+      xattr -dr com.apple.quarantine "/Applications/RepoPrompt.app"
 
-    (or right-click "RepoPrompt" in /Applications and choose Open the first time,
-    or run:  xattr -dr com.apple.quarantine "/Applications/RepoPrompt.app").
+    (or right-click "RepoPrompt" in /Applications and choose Open the first time).
 
     For personal use only; secure storage is bound to the local signing fingerprint.
   EOS
