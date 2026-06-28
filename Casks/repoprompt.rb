@@ -1,11 +1,11 @@
 cask "repoprompt" do
-  version "1.0.22-grok-dev"
-  sha256 "57a8bc58aabe3787f61436f82a5116a08489519761a306a71f4b08ae06fa67fe"
+  version "1.0.22-ce35ea1"
+  sha256 "4b2aac327e1a5d0ba14940c974c7401ee9f09968654e1f6acc277e6f18253b11"
 
-  url "https://github.com/z23cc/repoprompt-ce/releases/download/grok-dev-1.0.22/RepoPrompt-CE-grok-dev-1.0.22.zip",
+  url "https://github.com/z23cc/repoprompt-ce/releases/download/repoprompt-1.0.22-ce35ea1/RepoPrompt-1.0.22-ce35ea1.zip",
       verified: "github.com/z23cc/repoprompt-ce/"
   name "RepoPrompt"
-  desc "RepoPrompt CE + Grok Build ACP fixes (personal, non-notarized; installs as 'RepoPrompt')"
+  desc "RepoPrompt CE personal Homebrew build (repoprompt-1.0.22-ce35ea1; non-notarized; installs as RepoPrompt)"
   homepage "https://github.com/z23cc/repoprompt-ce"
 
   # Install under a distinct name so it does NOT overwrite an official
