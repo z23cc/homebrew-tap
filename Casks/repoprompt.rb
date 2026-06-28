@@ -1,4 +1,4 @@
-cask "repoprompt-ce" do
+cask "repoprompt" do
   version "1.0.22-grok-dev"
   sha256 "57a8bc58aabe3787f61436f82a5116a08489519761a306a71f4b08ae06fa67fe"
 
