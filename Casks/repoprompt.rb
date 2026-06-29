@@ -5,7 +5,7 @@ cask "repoprompt" do
   url "https://github.com/z23cc/repoprompt-ce/releases/download/repoprompt-1.0.22-a7695b4/RepoPrompt-1.0.22-a7695b4.zip",
       verified: "github.com/z23cc/repoprompt-ce/"
   name "RepoPrompt"
-  desc "RepoPrompt CE personal Homebrew build (repoprompt-1.0.22-929a8b3; non-notarized; installs as RepoPrompt)"
+  desc "RepoPrompt CE personal Homebrew build (repoprompt-1.0.22-a7695b4; non-notarized; installs as RepoPrompt)"
   homepage "https://github.com/z23cc/repoprompt-ce"
 
   # Install under a distinct name so it does NOT overwrite an official
