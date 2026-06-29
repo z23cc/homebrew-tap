@@ -1,8 +1,8 @@
 cask "repoprompt" do
-  version "1.0.22-87b2566"
-  sha256 "583bc2de9e9cfbbf8ee1f5ce457fcf724c3950eb0d21b4547b190602b8bbb0c7"
+  version "1.0.22-929a8b3"
+  sha256 "9fc28a7ad4481cb2cd9e5664fec9c5522ff2745063ffcc738546e846fda24120"
 
-  url "https://github.com/z23cc/repoprompt-ce/releases/download/repoprompt-1.0.22-87b2566/RepoPrompt-1.0.22-87b2566.zip",
+  url "https://github.com/z23cc/repoprompt-ce/releases/download/repoprompt-1.0.22-929a8b3/RepoPrompt-1.0.22-929a8b3.zip",
       verified: "github.com/z23cc/repoprompt-ce/"
   name "RepoPrompt"
   desc "RepoPrompt CE personal Homebrew build (repoprompt-1.0.22-87b2566; non-notarized; installs as RepoPrompt)"
